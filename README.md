@@ -7,6 +7,23 @@ Previously during past times, all the computations were performed on a single pr
 **Problem Statement:**
 One particular algorithm has to be implemented which should be executed on the IBISCO Cluster using MPI. So, this work aims to compute a matrix multiplication among two square matrices and the result of this multiplication will be stored in another square matrix. The task should be divided into multiple different processes. If we consider n=number of processes, then we will take different values of n starting from 1 to some 16 and compare the computation time for different numbers of processes. We will consider two larger matrices of N=700 so that the problem would be complex and well distributed among different processes. If two small metrics are considered then the complexity of the problem won’t be suitable for the parallel computing can be performed using traditional architecture only.
 
+**MPI FUNCTIONS:**
+
+Different MPI FUNCTIONS are used to perform parallel computation seamlessly. A few common macros and functions are described as follows:
+
+a.	MPI_Init: It initializes the MPI environment as well as bridges communication between the processes. 
+b.	MPI_COMM_WORLD: It indicated all the processes in the program and it is a global communicator. 
+c.	MPI_SUM: It computes the sum of input values and it’s a reduction operation. It is commonly used to perform the summation of the intermediate computation computed by individual processes. 
+d.	MPI_FLOAT: It is used to define the precession in the floating point number.
+e.	MPI_Send: It is used to send messages to other processes. 
+f.	MPI_Recv: It is used to receive messages from other processes.
+g.	MPI_Comm_rank: This function retrieves the current rank of the MPI Processes. 
+h.	MPI_Comm_size:  This function retrieves the total number of processes in the MPI_COMM_WORLD.
+i.	MPI_Wtime: It retrieves the elapsed time from the starting of the epoch in seconds.
+j.	MPI_Reduce: It performs the reduction operation. It combines the result of several processes and gives a single result. 
+k.	MPI_Finalize: This function shuts down the MPI environment at the end of the program and frees any resources allocated by MPI_Init.
+
+
 **Implementation WorkFlow:**
 
 ![image](https://github.com/semanto-mondal/MPI/assets/133217806/20bf261f-d7d7-442e-bcd5-c2f5c07a98bf)
