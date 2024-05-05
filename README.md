@@ -11,17 +11,17 @@ One particular algorithm has to be implemented which should be executed on the I
 
 Different MPI FUNCTIONS are used to perform parallel computation seamlessly. A few common macros and functions are described as follows:
 
-a.	MPI_Init: It initializes the MPI environment as well as bridges communication between the processes. 
-b.	MPI_COMM_WORLD: It indicates all the processes in the program and it is a global communicator. 
-c.	MPI_SUM: It computes the sum of input values and it’s a reduction operation. It is commonly used to perform the summation of the intermediate computation computed by individual processes. 
-d.	MPI_FLOAT: It is used to define the precession in the floating point number.
-e.	MPI_Send: It is used to send messages to other processes. 
-f.	MPI_Recv: It is used to receive messages from other processes.
-g.	MPI_Comm_rank: This function retrieves the current rank of the MPI Processes. 
-h.	MPI_Comm_size:  This function retrieves the total number of processes in the MPI_COMM_WORLD.
-i.	MPI_Wtime: It retrieves the elapsed time from the starting of the epoch in seconds.
-j.	MPI_Reduce: It performs the reduction operation. It combines the results of several processes and gives a single result. 
-k.	MPI_Finalize: This function shuts down the MPI environment at the end of the program and frees any resources allocated by MPI_Init.
+1.	MPI_Init: It initializes the MPI environment as well as bridges communication between the processes. 
+2.	MPI_COMM_WORLD: It indicates all the processes in the program and it is a global communicator. 
+3.	MPI_SUM: It computes the sum of input values and it’s a reduction operation. It is commonly used to perform the summation of the intermediate computation computed by individual processes. 
+4.	MPI_FLOAT: It is used to define the precession in the floating point number.
+5.	MPI_Send: It is used to send messages to other processes. 
+6.	MPI_Recv: It is used to receive messages from other processes.
+7.	MPI_Comm_rank: This function retrieves the current rank of the MPI Processes. 
+8.	MPI_Comm_size:  This function retrieves the total number of processes in the MPI_COMM_WORLD.
+9.	MPI_Wtime: It retrieves the elapsed time from the starting of the epoch in seconds.
+10.	MPI_Reduce: It performs the reduction operation. It combines the results of several processes and gives a single result. 
+11.	MPI_Finalize: This function shuts down the MPI environment at the end of the program and frees any resources allocated by MPI_Init.
 
 
 **Implementation WorkFlow:**
