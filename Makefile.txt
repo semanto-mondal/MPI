@@ -1,0 +1,9 @@
+CC=mpicc
+
+all: cpi
+
+cpi: cpi.o
+        $(CC) -o cpi cpi.o
+
+clean:
+        rm cpi cpi.o
